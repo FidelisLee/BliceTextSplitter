@@ -1,6 +1,6 @@
 block_cipher = None
-a = Analysis(['ToolBoxWindow.py'],
-    pathex=['D:\\Python\\workspace_python\\ToolBox'],
+a = Analysis(['TextSplitterWindow.py'],
+    pathex=['D:\\Python\\workspace_python\\BliceTextSplitter'],
     binaries=None,
     datas=None,
     hiddenimports=[],
@@ -15,10 +15,10 @@ exe = EXE(pyz,
     a.binaries,
     a.zipfiles,
     a.datas,
-    name='ToolBox v1.1.0',
+    name='블라이스 회차분할기 v1.0.0',
     debug=False,
     strip=False,
     upx=True,
     runtime_tmpdir=None,
     console=False ,
-    icon='D:\\Python\\workspace_python\\ToolBox\\ui\\icon.ico')
+    icon='D:\\Python\\workspace_python\\BliceTextSplitter\\ui\\icon.ico')
