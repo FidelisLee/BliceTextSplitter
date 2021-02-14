@@ -1,6 +1,6 @@
 #----------------------------------------------
-# Blice Text Splicer v1.0.0
-# from 2019.10.23 / Fidelis.lee , Min-Ju.Hwang
+# Blice Text Splitter v1.0.0
+# from 2019.10.23 / Fidelis.lee
 #-----------------------------------------------
 
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -38,6 +38,7 @@ class Ui_MainWindow(object):
         self.startIndex.setEnabled(False)
         self.startIndex.setGeometry(QtCore.QRect(300, 43, 30, 25))
         self.startIndex.setObjectName("startIndex")
+        self.startIndex.setText("1")
         self.btnStart = QtWidgets.QPushButton(self.centralwidget)
         self.btnStart.setEnabled(False)
         self.btnStart.setGeometry(QtCore.QRect(180, 430, 120, 30))
@@ -91,15 +92,10 @@ class AboutDialog(QtWidgets.QDialog):
         self.setWindowTitle("About")
         label1 = QtWidgets.QLabel(
             "Release v1.0.0\n"
-            "   - 2019.11.4\n"
-            "\n"
-            "Release v1.1.0\n"
-            "   - 2019.11.25\n"
+            "   - 2021.2.15\n"
             "\n"
             "-----------------------------\n"
-            "Copyright to KT Coporation.\n"
-            "\n"
-            "Contacts: Fidelis.lee, Min-ju.Hwang\n"
+            "Contacts: Fidelis.Lee\n"
             "-----------------------------"
         )
         self.btnClose = QtWidgets.QPushButton("OK")

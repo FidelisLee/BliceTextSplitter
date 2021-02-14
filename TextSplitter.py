@@ -1,9 +1,10 @@
 #----------------------------------------------
-# Author : Min-Ju Hwang. 2019.10.23
+# Blice Text Splitter v1.0.0
+# Author : Fidelis Lee. 2019.10.23
 #-----------------------------------------------
 import threading
 
-class TextSpliter(threading.Thread):
+class TextSplitter(threading.Thread):
     def write_split_file(self, count, lines):
         origName = self.src.replace('.txt','') # .txt 빼고 제목 따기
         if self.chkAutoRename:
