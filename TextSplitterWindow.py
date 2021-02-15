@@ -126,7 +126,7 @@ class MainApplication(QtWidgets.QMainWindow):
 
     def cancelTask(self):
         self.spliterThread = None
-        self.updateLogMsg("====== Spliter Canceled ======")
+        self.updateLogMsg("====== Canceled ======")
         self.ui.statusBar.showMessage("Canceled.")
 
 if __name__ == "__main__":

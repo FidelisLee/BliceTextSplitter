@@ -20,13 +20,17 @@ class TextSplitter(threading.Thread):
             self.updateLogMsg(splitName.split('/')[-1] + " >>")
 
     def run(self):
-        self.updateLogMsg("====== Text Spliter is Starting ======")
+        self.updateLogMsg("====== Blice Text Splitter is Starting ======")
         # limit = int(sys.argv[2])
         lineList = []
         with open(self.src, 'r', encoding='utf-8') as ori_file:
             try :
-                for line in ori_file :
-                    if self.stopFlag :
+                lines = ori_file.readlines()
+                if len(lines) != 0:
+                    lines[0] = lines[0].replace(u"\ufeff", '')
+
+                for line in lines:
+                    if self.stopFlag:
                         self.parent.threadCanceled.emit()
                         break
 
@@ -46,7 +50,7 @@ class TextSplitter(threading.Thread):
             self.write_split_file(self.startIndex, lineList)
 
         if not self.stopFlag:
-            self.updateLogMsg("====== Blice Spliter is Done ======")
+            self.updateLogMsg("====== Blice Text Splitter is Done ======")
             self.parent.threadFinished.emit()
 
     def updateLogMsg(self, str):
