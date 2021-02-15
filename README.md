@@ -1,7 +1,7 @@
 # BliceTextSplitter
-Blice Text Splitter
 
-+ Release v1.0.0
+## 사용방법
+![png](blice_text_splitter.png)
 1. 파일열기
 분할하려는 원본 파일을 열면, 첫 100라인을 분석해서 텍스트내 문자열 인코딩 상태를 체크해서 표시함
 2. 구분자
@@ -16,3 +16,6 @@ ex) 체크시 test_1화.txt 대신 테스트 1회.txt 파일로 생성됨.
 5. 변환중지 
 중간에 이상하다 싶으면 중단할 수 있다.
 하지만, 텍스트만 다루는 어플이다보니 중단하기전에 대부분 분할이 끝나버린다.
+
+## Release
++ Release v1.0.0 (2021.02.15)
